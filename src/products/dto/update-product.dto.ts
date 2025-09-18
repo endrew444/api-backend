@@ -1,13 +1,13 @@
 // src/products/dto/update-product.dto.ts
-import {IsString, IsNumber, IsNotEmpty, Min, IsOptional } from 'class-validator';
+import { IsString, IsNumber, IsOptional, Min } from 'class-validator';
 
 export class UpdateProductDto {
   @IsString()
   @IsOptional()
-  name: string;
+  name?: string;
 
   @IsNumber()
-    @Min(0)
-    @IsOptional()
-    price?: number;
+  @Min(0)
+  @IsOptional()
+  price?: number;
 }

@@ -17,5 +17,5 @@ export class ProductEntity {
   createdAt: Date;
 
   @ManyToOne(() => UserEntity, (user) => user.products)
-    user: UserEntity;
+  user: UserEntity
 }

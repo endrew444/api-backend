@@ -1,5 +1,6 @@
 // src/users/entities/user.entity.ts
 import { ProductEntity } from '../../products/entities/product.entity';
+//../../products/entities/product.entity'
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { Role } from '../../common/enums/role.enum';
 
